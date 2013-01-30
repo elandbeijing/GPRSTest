@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		851AE98C16B89E1A003D2E0C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */; };
+		85948AE316B806AA00D208FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE216B806AA00D208FB /* UIKit.framework */; };
+		85948AE516B806AA00D208FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE416B806AA00D208FB /* Foundation.framework */; };
+		85948AE716B806AA00D208FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE616B806AA00D208FB /* CoreGraphics.framework */; };
+		85948AED16B806AA00D208FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85948AEB16B806AA00D208FB /* InfoPlist.strings */; };
+		85948AEF16B806AA00D208FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85948AEE16B806AA00D208FB /* main.m */; };
+		85948AF316B806AA00D208FB /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85948AF216B806AA00D208FB /* MTAppDelegate.m */; };
+		85948AF516B806AA00D208FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 85948AF416B806AA00D208FB /* Default.png */; };
+		85948AF716B806AA00D208FB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85948AF616B806AA00D208FB /* Default@2x.png */; };
+		85948AF916B806AA00D208FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85948AF816B806AA00D208FB /* Default-568h@2x.png */; };
+		85948AFC16B806AA00D208FB /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85948AFB16B806AA00D208FB /* MTViewController.m */; };
+		85948AFF16B806AA00D208FB /* MTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85948AFD16B806AA00D208FB /* MTViewController.xib */; };
+		85948B0A16B807D100D208FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B0916B807D100D208FB /* AVFoundation.framework */; };
+		85948B0C16B807DA00D208FB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B0B16B807DA00D208FB /* CoreData.framework */; };
+		85948B0E16B807E700D208FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B0D16B807E700D208FB /* CoreLocation.framework */; };
+		85948B1016B807F000D208FB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B0F16B807F000D208FB /* CoreText.framework */; };
+		85948B1216B807FA00D208FB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1116B807FA00D208FB /* GLKit.framework */; };
+		85948B1416B8080600D208FB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1316B8080600D208FB /* ImageIO.framework */; };
+		85948B1616B8081E00D208FB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1516B8081E00D208FB /* libicucore.dylib */; };
+		85948B1816B8083E00D208FB /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1716B8083E00D208FB /* libstdc++.dylib */; };
+		85948B1A16B8084C00D208FB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1916B8084C00D208FB /* libz.dylib */; };
+		85948B1C16B8085600D208FB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1B16B8085600D208FB /* OpenGLES.framework */; };
+		85948B1E16B8085F00D208FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1D16B8085F00D208FB /* QuartzCore.framework */; };
+		85948B2016B8086900D208FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B1F16B8086800D208FB /* SystemConfiguration.framework */; };
+		85948B2216B80D6E00D208FB /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B2116B80D6E00D208FB /* GoogleMaps.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		85948ADE16B806AA00D208FB /* GPRSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPRSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85948AE216B806AA00D208FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85948AE416B806AA00D208FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85948AE616B806AA00D208FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85948AEA16B806AA00D208FB /* GPRSTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPRSTest-Info.plist"; sourceTree = "<group>"; };
+		85948AEC16B806AA00D208FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85948AEE16B806AA00D208FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85948AF016B806AA00D208FB /* GPRSTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPRSTest-Prefix.pch"; sourceTree = "<group>"; };
+		85948AF116B806AA00D208FB /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		85948AF216B806AA00D208FB /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
+		85948AF416B806AA00D208FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		85948AF616B806AA00D208FB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		85948AF816B806AA00D208FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		85948AFA16B806AA00D208FB /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
+		85948AFB16B806AA00D208FB /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
+		85948AFE16B806AA00D208FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MTViewController.xib; sourceTree = "<group>"; };
+		85948B0916B807D100D208FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		85948B0B16B807DA00D208FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		85948B0D16B807E700D208FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		85948B0F16B807F000D208FB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		85948B1116B807FA00D208FB /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		85948B1316B8080600D208FB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		85948B1516B8081E00D208FB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		85948B1716B8083E00D208FB /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		85948B1916B8084C00D208FB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		85948B1B16B8085600D208FB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		85948B1D16B8085F00D208FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		85948B1F16B8086800D208FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		85948B2116B80D6E00D208FB /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85948ADB16B806AA00D208FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85948B2216B80D6E00D208FB /* GoogleMaps.framework in Frameworks */,
+				85948B2016B8086900D208FB /* SystemConfiguration.framework in Frameworks */,
+				85948B1E16B8085F00D208FB /* QuartzCore.framework in Frameworks */,
+				85948B1C16B8085600D208FB /* OpenGLES.framework in Frameworks */,
+				85948B1A16B8084C00D208FB /* libz.dylib in Frameworks */,
+				85948B1816B8083E00D208FB /* libstdc++.dylib in Frameworks */,
+				85948B1616B8081E00D208FB /* libicucore.dylib in Frameworks */,
+				85948B1416B8080600D208FB /* ImageIO.framework in Frameworks */,
+				85948B1216B807FA00D208FB /* GLKit.framework in Frameworks */,
+				85948B1016B807F000D208FB /* CoreText.framework in Frameworks */,
+				85948B0E16B807E700D208FB /* CoreLocation.framework in Frameworks */,
+				85948B0C16B807DA00D208FB /* CoreData.framework in Frameworks */,
+				85948B0A16B807D100D208FB /* AVFoundation.framework in Frameworks */,
+				85948AE316B806AA00D208FB /* UIKit.framework in Frameworks */,
+				85948AE516B806AA00D208FB /* Foundation.framework in Frameworks */,
+				85948AE716B806AA00D208FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85948AD316B806AA00D208FB = {
+			isa = PBXGroup;
+			children = (
+				85948B2116B80D6E00D208FB /* GoogleMaps.framework */,
+				85948AE816B806AA00D208FB /* GPRSTest */,
+				85948AE116B806AA00D208FB /* Frameworks */,
+				85948ADF16B806AA00D208FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85948ADF16B806AA00D208FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85948ADE16B806AA00D208FB /* GPRSTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85948AE116B806AA00D208FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85948B1F16B8086800D208FB /* SystemConfiguration.framework */,
+				85948B1D16B8085F00D208FB /* QuartzCore.framework */,
+				85948B1B16B8085600D208FB /* OpenGLES.framework */,
+				85948B1916B8084C00D208FB /* libz.dylib */,
+				85948B1716B8083E00D208FB /* libstdc++.dylib */,
+				85948B1516B8081E00D208FB /* libicucore.dylib */,
+				85948B1316B8080600D208FB /* ImageIO.framework */,
+				85948B1116B807FA00D208FB /* GLKit.framework */,
+				85948B0F16B807F000D208FB /* CoreText.framework */,
+				85948B0D16B807E700D208FB /* CoreLocation.framework */,
+				85948B0B16B807DA00D208FB /* CoreData.framework */,
+				85948B0916B807D100D208FB /* AVFoundation.framework */,
+				85948AE216B806AA00D208FB /* UIKit.framework */,
+				85948AE416B806AA00D208FB /* Foundation.framework */,
+				85948AE616B806AA00D208FB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85948AE816B806AA00D208FB /* GPRSTest */ = {
+			isa = PBXGroup;
+			children = (
+				85948AF116B806AA00D208FB /* MTAppDelegate.h */,
+				85948AF216B806AA00D208FB /* MTAppDelegate.m */,
+				85948AFA16B806AA00D208FB /* MTViewController.h */,
+				85948AFB16B806AA00D208FB /* MTViewController.m */,
+				85948AFD16B806AA00D208FB /* MTViewController.xib */,
+				85948AE916B806AA00D208FB /* Supporting Files */,
+			);
+			path = GPRSTest;
+			sourceTree = "<group>";
+		};
+		85948AE916B806AA00D208FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */,
+				85948AEA16B806AA00D208FB /* GPRSTest-Info.plist */,
+				85948AEB16B806AA00D208FB /* InfoPlist.strings */,
+				85948AEE16B806AA00D208FB /* main.m */,
+				85948AF016B806AA00D208FB /* GPRSTest-Prefix.pch */,
+				85948AF416B806AA00D208FB /* Default.png */,
+				85948AF616B806AA00D208FB /* Default@2x.png */,
+				85948AF816B806AA00D208FB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85948ADD16B806AA00D208FB /* GPRSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85948B0216B806AA00D208FB /* Build configuration list for PBXNativeTarget "GPRSTest" */;
+			buildPhases = (
+				85948ADA16B806AA00D208FB /* Sources */,
+				85948ADB16B806AA00D208FB /* Frameworks */,
+				85948ADC16B806AA00D208FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPRSTest;
+			productName = GPRSTest;
+			productReference = 85948ADE16B806AA00D208FB /* GPRSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85948AD516B806AA00D208FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ElandApple02;
+			};
+			buildConfigurationList = 85948AD816B806AA00D208FB /* Build configuration list for PBXProject "GPRSTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85948AD316B806AA00D208FB;
+			productRefGroup = 85948ADF16B806AA00D208FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85948ADD16B806AA00D208FB /* GPRSTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85948ADC16B806AA00D208FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85948AED16B806AA00D208FB /* InfoPlist.strings in Resources */,
+				85948AF516B806AA00D208FB /* Default.png in Resources */,
+				85948AF716B806AA00D208FB /* Default@2x.png in Resources */,
+				85948AF916B806AA00D208FB /* Default-568h@2x.png in Resources */,
+				85948AFF16B806AA00D208FB /* MTViewController.xib in Resources */,
+				851AE98C16B89E1A003D2E0C /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85948ADA16B806AA00D208FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85948AEF16B806AA00D208FB /* main.m in Sources */,
+				85948AF316B806AA00D208FB /* MTAppDelegate.m in Sources */,
+				85948AFC16B806AA00D208FB /* MTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85948AEB16B806AA00D208FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85948AEC16B806AA00D208FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		85948AFD16B806AA00D208FB /* MTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85948AFE16B806AA00D208FB /* en */,
+			);
+			name = MTViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85948B0016B806AA00D208FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xinmiao xiao (S3HRQBX3SW)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44B70775-9006-4F95-A802-2F410B82990F";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85948B0116B806AA00D208FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xinmiao xiao (S3HRQBX3SW)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44B70775-9006-4F95-A802-2F410B82990F";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85948B0316B806AA00D208FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xinmiao xiao (S3HRQBX3SW)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPRSTest/GPRSTest-Prefix.pch";
+				INFOPLIST_FILE = "GPRSTest/GPRSTest-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44B70775-9006-4F95-A802-2F410B82990F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85948B0416B806AA00D208FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xinmiao xiao (S3HRQBX3SW)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPRSTest/GPRSTest-Prefix.pch";
+				INFOPLIST_FILE = "GPRSTest/GPRSTest-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44B70775-9006-4F95-A802-2F410B82990F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85948AD816B806AA00D208FB /* Build configuration list for PBXProject "GPRSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85948B0016B806AA00D208FB /* Debug */,
+				85948B0116B806AA00D208FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85948B0216B806AA00D208FB /* Build configuration list for PBXNativeTarget "GPRSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85948B0316B806AA00D208FB /* Debug */,
+				85948B0416B806AA00D208FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85948AD516B806AA00D208FB /* Project object */;
+}
