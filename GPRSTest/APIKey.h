@@ -8,4 +8,4 @@
 
 ////AIzaSyA7nPHUmxnEY6Ip0BSKwEz-ynbsz​​GnuSJk  //xiaoxinmiao001
 //AIzaSyBSsaKVFk0PhordVAt_e_FiaNrbDct3Fck    //elandbeijing
-const static NSString *APIKey=@"AIzaSyBSsaKVFk0PhordVAt_e_FiaNrbDct3Fck";
+const static NSString *APIKey=@"AIzaSyA7nPHUmxnEY6Ip0BSKwEz-ynbsz​​GnuSJk";
