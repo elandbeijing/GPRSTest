@@ -7,19 +7,22 @@
 //
 
 #import "MTAppDelegate.h"
+#import "APIKey.h"
 
-#import "MTViewController.h"
+#import "LoginController.h"
 
 
 @implementation MTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-        [GMSServices provideAPIKey:@"AIzaSyA7nPHUmxnEY6Ip0BSKwEz-ynbsz​​GnuSJk"];
+        [GMSServices provideAPIKey:(NSString *)APIKey];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[MTViewController alloc] initWithNibName:@"MTViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    // Override point for customization after application launch.//MTViewController
+        LoginController *loginController= [[LoginController alloc] initWithNibName:@"LoginView" bundle:nil];
+    UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:loginController];
+
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
 
     return YES;

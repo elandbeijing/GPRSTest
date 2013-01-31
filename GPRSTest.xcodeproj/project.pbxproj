@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		851AE98C16B89E1A003D2E0C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */; };
+		853BEA3916BA3696003E4DB2 /* newbalance.png in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA3716BA3696003E4DB2 /* newbalance.png */; };
+		853BEA3C16BA3B90003E4DB2 /* newbalance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA3B16BA3B90003E4DB2 /* newbalance@2x.png */; };
+		853BEA4316BA3DC6003E4DB2 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BEA4116BA3DC6003E4DB2 /* LoginController.m */; };
+		853BEA4416BA3DC6003E4DB2 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA4216BA3DC6003E4DB2 /* LoginView.xib */; };
+		853BEA4D16BA4B3E003E4DB2 /* MapInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BEA4B16BA4B3E003E4DB2 /* MapInfoController.m */; };
+		853BEA4E16BA4B3E003E4DB2 /* MapInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA4C16BA4B3E003E4DB2 /* MapInfoView.xib */; };
 		85948AE316B806AA00D208FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE216B806AA00D208FB /* UIKit.framework */; };
 		85948AE516B806AA00D208FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE416B806AA00D208FB /* Foundation.framework */; };
 		85948AE716B806AA00D208FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE616B806AA00D208FB /* CoreGraphics.framework */; };
@@ -17,8 +23,6 @@
 		85948AF516B806AA00D208FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 85948AF416B806AA00D208FB /* Default.png */; };
 		85948AF716B806AA00D208FB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85948AF616B806AA00D208FB /* Default@2x.png */; };
 		85948AF916B806AA00D208FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85948AF816B806AA00D208FB /* Default-568h@2x.png */; };
-		85948AFC16B806AA00D208FB /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85948AFB16B806AA00D208FB /* MTViewController.m */; };
-		85948AFF16B806AA00D208FB /* MTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85948AFD16B806AA00D208FB /* MTViewController.xib */; };
 		85948B0A16B807D100D208FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B0916B807D100D208FB /* AVFoundation.framework */; };
 		85948B0C16B807DA00D208FB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B0B16B807DA00D208FB /* CoreData.framework */; };
 		85948B0E16B807E700D208FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948B0D16B807E700D208FB /* CoreLocation.framework */; };
@@ -36,6 +40,15 @@
 
 /* Begin PBXFileReference section */
 		851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		853BEA3716BA3696003E4DB2 /* newbalance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newbalance.png; sourceTree = "<group>"; };
+		853BEA3B16BA3B90003E4DB2 /* newbalance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newbalance@2x.png"; sourceTree = "<group>"; };
+		853BEA3D16BA3C5D003E4DB2 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		853BEA4016BA3DC6003E4DB2 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		853BEA4116BA3DC6003E4DB2 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		853BEA4216BA3DC6003E4DB2 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		853BEA4A16BA4B3E003E4DB2 /* MapInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInfoController.h; sourceTree = "<group>"; };
+		853BEA4B16BA4B3E003E4DB2 /* MapInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInfoController.m; sourceTree = "<group>"; };
+		853BEA4C16BA4B3E003E4DB2 /* MapInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapInfoView.xib; sourceTree = "<group>"; };
 		85948ADE16B806AA00D208FB /* GPRSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPRSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85948AE216B806AA00D208FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85948AE416B806AA00D208FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,9 +62,6 @@
 		85948AF416B806AA00D208FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		85948AF616B806AA00D208FB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		85948AF816B806AA00D208FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		85948AFA16B806AA00D208FB /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
-		85948AFB16B806AA00D208FB /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
-		85948AFE16B806AA00D208FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MTViewController.xib; sourceTree = "<group>"; };
 		85948B0916B807D100D208FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		85948B0B16B807DA00D208FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		85948B0D16B807E700D208FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -97,7 +107,6 @@
 		85948AD316B806AA00D208FB = {
 			isa = PBXGroup;
 			children = (
-				85948B2116B80D6E00D208FB /* GoogleMaps.framework */,
 				85948AE816B806AA00D208FB /* GPRSTest */,
 				85948AE116B806AA00D208FB /* Frameworks */,
 				85948ADF16B806AA00D208FB /* Products */,
@@ -115,6 +124,7 @@
 		85948AE116B806AA00D208FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85948B2116B80D6E00D208FB /* GoogleMaps.framework */,
 				85948B1F16B8086800D208FB /* SystemConfiguration.framework */,
 				85948B1D16B8085F00D208FB /* QuartzCore.framework */,
 				85948B1B16B8085600D208FB /* OpenGLES.framework */,
@@ -137,11 +147,15 @@
 		85948AE816B806AA00D208FB /* GPRSTest */ = {
 			isa = PBXGroup;
 			children = (
+				853BEA3D16BA3C5D003E4DB2 /* APIKey.h */,
 				85948AF116B806AA00D208FB /* MTAppDelegate.h */,
 				85948AF216B806AA00D208FB /* MTAppDelegate.m */,
-				85948AFA16B806AA00D208FB /* MTViewController.h */,
-				85948AFB16B806AA00D208FB /* MTViewController.m */,
-				85948AFD16B806AA00D208FB /* MTViewController.xib */,
+				853BEA4016BA3DC6003E4DB2 /* LoginController.h */,
+				853BEA4116BA3DC6003E4DB2 /* LoginController.m */,
+				853BEA4216BA3DC6003E4DB2 /* LoginView.xib */,
+				853BEA4A16BA4B3E003E4DB2 /* MapInfoController.h */,
+				853BEA4B16BA4B3E003E4DB2 /* MapInfoController.m */,
+				853BEA4C16BA4B3E003E4DB2 /* MapInfoView.xib */,
 				85948AE916B806AA00D208FB /* Supporting Files */,
 			);
 			path = GPRSTest;
@@ -150,6 +164,8 @@
 		85948AE916B806AA00D208FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				853BEA3716BA3696003E4DB2 /* newbalance.png */,
+				853BEA3B16BA3B90003E4DB2 /* newbalance@2x.png */,
 				851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */,
 				85948AEA16B806AA00D208FB /* GPRSTest-Info.plist */,
 				85948AEB16B806AA00D208FB /* InfoPlist.strings */,
@@ -218,8 +234,11 @@
 				85948AF516B806AA00D208FB /* Default.png in Resources */,
 				85948AF716B806AA00D208FB /* Default@2x.png in Resources */,
 				85948AF916B806AA00D208FB /* Default-568h@2x.png in Resources */,
-				85948AFF16B806AA00D208FB /* MTViewController.xib in Resources */,
 				851AE98C16B89E1A003D2E0C /* GoogleMaps.bundle in Resources */,
+				853BEA3916BA3696003E4DB2 /* newbalance.png in Resources */,
+				853BEA3C16BA3B90003E4DB2 /* newbalance@2x.png in Resources */,
+				853BEA4416BA3DC6003E4DB2 /* LoginView.xib in Resources */,
+				853BEA4E16BA4B3E003E4DB2 /* MapInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +251,8 @@
 			files = (
 				85948AEF16B806AA00D208FB /* main.m in Sources */,
 				85948AF316B806AA00D208FB /* MTAppDelegate.m in Sources */,
-				85948AFC16B806AA00D208FB /* MTViewController.m in Sources */,
+				853BEA4316BA3DC6003E4DB2 /* LoginController.m in Sources */,
+				853BEA4D16BA4B3E003E4DB2 /* MapInfoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,14 +265,6 @@
 				85948AEC16B806AA00D208FB /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		85948AFD16B806AA00D208FB /* MTViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85948AFE16B806AA00D208FB /* en */,
-			);
-			name = MTViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -322,6 +334,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPRSTest/GPRSTest-Prefix.pch";
 				INFOPLIST_FILE = "GPRSTest/GPRSTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44B70775-9006-4F95-A802-2F410B82990F";
@@ -341,6 +354,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPRSTest/GPRSTest-Prefix.pch";
 				INFOPLIST_FILE = "GPRSTest/GPRSTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "44B70775-9006-4F95-A802-2F410B82990F";

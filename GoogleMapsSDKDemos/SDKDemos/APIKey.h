@@ -1,7 +1,7 @@
 
 // To use GoogleMapsSDKDemos, please register an APIKey for your application
 // and set it here. Please see the README for more information.
-const static NSString *APIKey = @"";
+const static NSString *APIKey = @"AIzaSyDYw6NGVgaLFADeKqu45HRMPF0m-ET1llw";
 
 // DO NOT CHECK IN CHANGES TO THIS FILE.
 // Your API Key is private. To tell git to ignore local changes to this file,

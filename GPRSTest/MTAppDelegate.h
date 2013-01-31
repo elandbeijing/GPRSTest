@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <GoogleMaps/GoogleMaps.h>
 
-@class MTViewController;
+
+
 
 @interface MTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) MTViewController *viewController;
 
 @end
