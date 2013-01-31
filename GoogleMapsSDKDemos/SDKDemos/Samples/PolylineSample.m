@@ -41,7 +41,7 @@
   // Bottom left.
   options = [GMSPolylineOptions options];
   [options addVertex:CLLocationCoordinate2DMake(baseLat - offset, baseLong)];
-  [options addVertex:CLLocationCoordinate2DMake(baseLat, baseLong - 229)];
+  [options addVertex:CLLocationCoordinate2DMake(baseLat, baseLong - offset)];
   options.color = firstColor;
   options.width = 10.f;
   [self.mapView addPolylineWithOptions:options];

@@ -32,17 +32,17 @@
   options.icon = [UIImage imageNamed:@"glow-marker"];
   self.mapView.selectedMarker = [self.mapView addMarkerWithOptions:options];
 
-//  // Draw a polyline down the river.
-//  GMSPolylineOptions *polyline = [GMSPolylineOptions options];
-//  [polyline addVertex:CLLocationCoordinate2DMake(-37.826186, 144.98026)];
-//  [polyline addVertex:CLLocationCoordinate2DMake(-37.821695, 144.976087)];
-//  [polyline addVertex:CLLocationCoordinate2DMake(-37.819304, 144.972846)];
-//  [polyline addVertex:CLLocationCoordinate2DMake(-37.81923, 144.969146)];
-//  [polyline addVertex:CLLocationCoordinate2DMake(-37.820002, 144.963578)];
-//  [polyline addVertex:CLLocationCoordinate2DMake(-37.821497, 144.959233)];
-//  polyline.width = 10;
-//  polyline.color = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
-//  [self.mapView addPolylineWithOptions:polyline];
+  // Draw a polyline down the river.
+  GMSPolylineOptions *polyline = [GMSPolylineOptions options];
+  [polyline addVertex:CLLocationCoordinate2DMake(-37.826186, 144.98026)];
+  [polyline addVertex:CLLocationCoordinate2DMake(-37.821695, 144.976087)];
+  [polyline addVertex:CLLocationCoordinate2DMake(-37.819304, 144.972846)];
+  [polyline addVertex:CLLocationCoordinate2DMake(-37.81923, 144.969146)];
+  [polyline addVertex:CLLocationCoordinate2DMake(-37.820002, 144.963578)];
+  [polyline addVertex:CLLocationCoordinate2DMake(-37.821497, 144.959233)];
+  polyline.width = 10;
+  polyline.color = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
+  [self.mapView addPolylineWithOptions:polyline];
 }
 
 @end

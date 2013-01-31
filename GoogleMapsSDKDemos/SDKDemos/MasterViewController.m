@@ -15,7 +15,6 @@ static NSArray *samples;
 }
 
 - (id)init {
-   // [MasterViewController initialize];
   if ((self = [super initWithNibName:@"MasterViewController" bundle:nil])) {
     self.title = NSLocalizedString(@"SDKDemos", @"SDKDemos");
     isPhone_ = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone);
