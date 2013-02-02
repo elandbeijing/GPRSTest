@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import "MyAnnotation.h"
 
 
 @interface MapInfoController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>
@@ -18,6 +19,7 @@
     
     // current location
     CLLocation* _currentLocation;
+    MyAnnotation *_pinAnnotation ;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblLon;

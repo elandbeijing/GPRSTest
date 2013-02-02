@@ -178,7 +178,7 @@
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
     NSLog(@"-------viewForAnnotation-------");
 
-    
+
     //此类可以显示针一样的图标
     MKPinAnnotationView *newAnnotation=[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"annotation1"];
     
@@ -189,6 +189,20 @@
     //显示标志提示
     newAnnotation.canShowCallout=YES;
     return newAnnotation;
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+//    CLLocationCoordinate2D coordinate=CLLocationCoordinate2DMake(_currentLocation.coordinate.latitude, _currentLocation.coordinate.longitude);
+//    if(_pinAnnotation!=nil)
+//    {
+//        [_mapView removeAnnotation:_pinAnnotation];
+//
+//    }
+//    _pinAnnotation= [[MyAnnotation alloc] initWithCoords:coordinate];
+//    _pinAnnotation.title = @"PIN-TITLE";
+//    _pinAnnotation.subtitle = @"PIN_SUBTITLE";
+//    [_mapView addAnnotation:_pinAnnotation];
 }
 
 - (void)didReceiveMemoryWarning

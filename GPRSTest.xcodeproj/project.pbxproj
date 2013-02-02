@@ -10,6 +10,7 @@
 		851AE98C16B89E1A003D2E0C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */; };
 		85399D3116BC9FCC00D2A47C /* MapInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BEA4B16BA4B3E003E4DB2 /* MapInfoController.m */; };
 		85399D3316BCA1E200D2A47C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85399D3216BCA1E200D2A47C /* MapKit.framework */; };
+		85399D3616BCB14000D2A47C /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85399D3516BCB14000D2A47C /* MyAnnotation.m */; };
 		853BEA3916BA3696003E4DB2 /* newbalance.png in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA3716BA3696003E4DB2 /* newbalance.png */; };
 		853BEA3C16BA3B90003E4DB2 /* newbalance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA3B16BA3B90003E4DB2 /* newbalance@2x.png */; };
 		853BEA4316BA3DC6003E4DB2 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BEA4116BA3DC6003E4DB2 /* LoginController.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		85399D3216BCA1E200D2A47C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		85399D3416BCB14000D2A47C /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		85399D3516BCB14000D2A47C /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 		853BEA3716BA3696003E4DB2 /* newbalance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newbalance.png; sourceTree = "<group>"; };
 		853BEA3B16BA3B90003E4DB2 /* newbalance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newbalance@2x.png"; sourceTree = "<group>"; };
 		853BEA3D16BA3C5D003E4DB2 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				85F0871416BA6F20003A20CA /* MyCLController.h */,
 				85F0871516BA6F20003A20CA /* MyCLController.m */,
 				85948AE916B806AA00D208FB /* Supporting Files */,
+				85399D3416BCB14000D2A47C /* MyAnnotation.h */,
+				85399D3516BCB14000D2A47C /* MyAnnotation.m */,
 			);
 			path = GPRSTest;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				85948AF316B806AA00D208FB /* MTAppDelegate.m in Sources */,
 				853BEA4316BA3DC6003E4DB2 /* LoginController.m in Sources */,
 				85F0871616BA6F20003A20CA /* MyCLController.m in Sources */,
+				85399D3616BCB14000D2A47C /* MyAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
