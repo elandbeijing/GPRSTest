@@ -423,6 +423,7 @@
 				GCC_PREFIX_HEADER = "SDKDemos/SDKDemos-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = "SDKDemos/SDKDemos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SDKDemos;
 				WRAPPER_EXTENSION = app;
@@ -440,6 +441,7 @@
 				GCC_PREFIX_HEADER = "SDKDemos/SDKDemos-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = "SDKDemos/SDKDemos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SDKDemos;
 				WRAPPER_EXTENSION = app;
