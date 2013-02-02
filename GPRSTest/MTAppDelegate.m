@@ -10,6 +10,7 @@
 #import "APIKey.h"
 
 #import "LoginController.h"
+#import "MTTimeViewController.h"
 
 
 @implementation MTAppDelegate
@@ -20,6 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.//MTViewController
         LoginController *loginController= [[LoginController alloc] initWithNibName:@"LoginView" bundle:nil];
+           // MTTimeViewController *loginController= [[MTTimeViewController alloc] initWithNibName:@"MTTimeViewController" bundle:nil];
     UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:loginController];
 
     self.window.rootViewController = nav;

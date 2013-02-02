@@ -22,8 +22,16 @@
     MyAnnotation *_pinAnnotation ;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *lblLon;
-@property (weak, nonatomic) IBOutlet UILabel *lblLat;
+@property (weak, nonatomic) IBOutlet UILabel *timeSection;
+
+@property (weak, nonatomic) IBOutlet UILabel *distance;
+@property (weak, nonatomic) IBOutlet UIButton *leftbtn;
+@property (weak, nonatomic) IBOutlet UIButton *rightbtn;
+
+- (IBAction)StartOrPause:(id)sender;
+- (IBAction)stopOrExit:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIView *ShowView;
 
 @property (nonatomic, retain) MKMapView* mapView;
 @property (nonatomic, retain) NSMutableArray* points;

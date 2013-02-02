@@ -16,6 +16,8 @@
 		853BEA4316BA3DC6003E4DB2 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BEA4116BA3DC6003E4DB2 /* LoginController.m */; };
 		853BEA4416BA3DC6003E4DB2 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA4216BA3DC6003E4DB2 /* LoginView.xib */; };
 		853BEA4E16BA4B3E003E4DB2 /* MapInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA4C16BA4B3E003E4DB2 /* MapInfoView.xib */; };
+		85597F0116BCDE4E00D710FF /* MTTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85597EFF16BCDE4E00D710FF /* MTTimeViewController.m */; };
+		85597F0216BCDE4E00D710FF /* MTTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85597F0016BCDE4E00D710FF /* MTTimeViewController.xib */; };
 		85948AE316B806AA00D208FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE216B806AA00D208FB /* UIKit.framework */; };
 		85948AE516B806AA00D208FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE416B806AA00D208FB /* Foundation.framework */; };
 		85948AE716B806AA00D208FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE616B806AA00D208FB /* CoreGraphics.framework */; };
@@ -55,6 +57,9 @@
 		853BEA4A16BA4B3E003E4DB2 /* MapInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInfoController.h; sourceTree = "<group>"; };
 		853BEA4B16BA4B3E003E4DB2 /* MapInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInfoController.m; sourceTree = "<group>"; };
 		853BEA4C16BA4B3E003E4DB2 /* MapInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapInfoView.xib; sourceTree = "<group>"; };
+		85597EFE16BCDE4E00D710FF /* MTTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTimeViewController.h; sourceTree = "<group>"; };
+		85597EFF16BCDE4E00D710FF /* MTTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTimeViewController.m; sourceTree = "<group>"; };
+		85597F0016BCDE4E00D710FF /* MTTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTimeViewController.xib; sourceTree = "<group>"; };
 		85948ADE16B806AA00D208FB /* GPRSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPRSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85948AE216B806AA00D208FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85948AE416B806AA00D208FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -171,6 +176,9 @@
 				85948AE916B806AA00D208FB /* Supporting Files */,
 				85399D3416BCB14000D2A47C /* MyAnnotation.h */,
 				85399D3516BCB14000D2A47C /* MyAnnotation.m */,
+				85597EFE16BCDE4E00D710FF /* MTTimeViewController.h */,
+				85597EFF16BCDE4E00D710FF /* MTTimeViewController.m */,
+				85597F0016BCDE4E00D710FF /* MTTimeViewController.xib */,
 			);
 			path = GPRSTest;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 				853BEA3C16BA3B90003E4DB2 /* newbalance@2x.png in Resources */,
 				853BEA4416BA3DC6003E4DB2 /* LoginView.xib in Resources */,
 				853BEA4E16BA4B3E003E4DB2 /* MapInfoView.xib in Resources */,
+				85597F0216BCDE4E00D710FF /* MTTimeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +278,7 @@
 				853BEA4316BA3DC6003E4DB2 /* LoginController.m in Sources */,
 				85F0871616BA6F20003A20CA /* MyCLController.m in Sources */,
 				85399D3616BCB14000D2A47C /* MyAnnotation.m in Sources */,
+				85597F0116BCDE4E00D710FF /* MTTimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

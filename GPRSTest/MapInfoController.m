@@ -15,8 +15,11 @@
 @implementation MapInfoController
 
 - (void)viewDidUnload {
-    [self setLblLat:nil];
-    [self setLblLon:nil];
+    [self setShowView:nil];
+    [self setTimeSection:nil];
+    [self setDistance:nil];
+    [self setLeftbtn:nil];
+    [self setRightbtn:nil];
     [super viewDidUnload];
 }
 
@@ -42,13 +45,27 @@
     self.mapView.showsUserLocation = YES;
     self.mapView.userInteractionEnabled = YES;
     self.mapView.userTrackingMode = MKUserTrackingModeFollowWithHeading;
-    [self.view addSubview:self.mapView];
+    [self.ShowView addSubview:self.mapView];
     
     
     // configure location manager
     // [self configureLocationManager];
     
     [self configureRoutes];
+    
+      
+    
+   NSTimer *timerNoTwo = [NSTimer scheduledTimerWithTimeInterval:1
+                                                  target:self
+                                                selector:@selector(timerFired:)
+                                                userInfo:nil
+                                                 repeats:YES];
+}
+
+-(void)timerFired:(NSTimer *)timer
+{
+
+
 }
 
 - (void)configureRoutes
@@ -120,8 +137,14 @@
 {
     NSLog(@"%@ ----- %@", self, NSStringFromSelector(_cmd));
     
+    
     CLLocation *location = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude
                                                       longitude:userLocation.coordinate.longitude];
+   // _lblLat.text=[NSString stringWithFormat:@"%f",userLocation.coordinate.latitude];
+   // _lblLon.text=[NSString stringWithFormat:@"%f",userLocation.coordinate.longitude];
+    
+    NSLog(@"%f,%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+    
     // check the zero point
     if  (userLocation.coordinate.latitude == 0.0f ||
          userLocation.coordinate.longitude == 0.0f)
@@ -140,6 +163,8 @@
     
     [_points addObject:location];
     _currentLocation = location;
+    
+  
     
     NSLog(@"points: %@", _points);
     
@@ -215,4 +240,9 @@
 
 
 
+- (IBAction)StartOrPause:(id)sender {
+}
+
+- (IBAction)stopOrExit:(id)sender {
+}
 @end
