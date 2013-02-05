@@ -8,6 +8,7 @@
 
 #import "LoginController.h"
 #import "MapInfoController.h"
+#import "ELTableViewCell.h"
 
 @interface LoginController ()
 {
@@ -53,8 +54,42 @@
     
     MapInfoController *mapController=[[MapInfoController alloc] initWithNibName:@"MapInfoView" bundle:nil];
     [self.navigationController pushViewController:mapController animated:YES];
-    
 
-    
 }
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return accountDataSource.count;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // NSString *identifier=@"mainTableView";
+    //        UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
+    //    if(cell==nil)
+    //    {
+    //        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    //    }
+    //    NSString *title= [dataSourceTableView objectAtIndex:[indexPath row] ];
+    //    cell.textLabel.text=title;
+    //    cell.detailTextLabel.text=title;
+    //    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
+    //    return cell;
+    static NSString *identifier = @"CellTableIdentifier";
+    static BOOL nibsRegistered = NO;
+    if (!nibsRegistered)
+    {
+        UINib *nib = [UINib nibWithNibName:@"MyCell" bundle:nil];
+        [tableView registerNib:nib forCellReuseIdentifier:identifier];
+        nibsRegistered = YES;
+    }
+    
+    ELTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    NSString *title= [accountDataSource objectAtIndex:[indexPath row] ];
+    cell.name=title;
+    cell.age=title;
+    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
+    return cell;
+}
+
 @end

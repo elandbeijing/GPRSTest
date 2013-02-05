@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="History" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="inDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="runedTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="History" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>

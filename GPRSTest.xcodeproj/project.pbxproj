@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		851AE98C16B89E1A003D2E0C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */; };
+		852AC3F516BF8A5A00382264 /* FFCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC3F416BF8A5A00382264 /* FFCoreDataHelper.m */; };
+		852AC3F916BF8A8300382264 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 852AC3F716BF8A8300382264 /* Model.xcdatamodeld */; };
+		852AC40516BF8EC000382264 /* Account+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC40416BF8EC000382264 /* Account+CRUD.m */; };
+		852AC40816BF8ED200382264 /* History+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC40716BF8ED200382264 /* History+CRUD.m */; };
+		852AC41416BF926400382264 /* ELTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC41216BF926400382264 /* ELTableViewCell.m */; };
+		852AC41516BF926400382264 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 852AC41316BF926400382264 /* MyCell.xib */; };
+		852AC41816BF9C8A00382264 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC41616BF9C8A00382264 /* History.m */; };
+		852AC41916BF9C8A00382264 /* History+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC41716BF9C8A00382264 /* History+CRUD.m */; };
+		852AC41B16BF9CAF00382264 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC41A16BF9CAF00382264 /* Account.m */; };
 		85399D3116BC9FCC00D2A47C /* MapInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BEA4B16BA4B3E003E4DB2 /* MapInfoController.m */; };
 		85399D3316BCA1E200D2A47C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85399D3216BCA1E200D2A47C /* MapKit.framework */; };
 		85399D3616BCB14000D2A47C /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85399D3516BCB14000D2A47C /* MyAnnotation.m */; };
@@ -45,6 +54,21 @@
 
 /* Begin PBXFileReference section */
 		851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		852AC3F316BF8A5A00382264 /* FFCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCoreDataHelper.h; sourceTree = "<group>"; };
+		852AC3F416BF8A5A00382264 /* FFCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCoreDataHelper.m; sourceTree = "<group>"; };
+		852AC3F816BF8A8300382264 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		852AC3FA16BF8C5400382264 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		852AC3FD16BF8C6300382264 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		852AC40316BF8EC000382264 /* Account+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Account+CRUD.h"; sourceTree = "<group>"; };
+		852AC40416BF8EC000382264 /* Account+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Account+CRUD.m"; sourceTree = "<group>"; };
+		852AC40616BF8ED200382264 /* History+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "History+CRUD.h"; sourceTree = "<group>"; };
+		852AC40716BF8ED200382264 /* History+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "History+CRUD.m"; sourceTree = "<group>"; };
+		852AC41116BF926300382264 /* ELTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTableViewCell.h; sourceTree = "<group>"; };
+		852AC41216BF926400382264 /* ELTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTableViewCell.m; sourceTree = "<group>"; };
+		852AC41316BF926400382264 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		852AC41616BF9C8A00382264 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History.m; sourceTree = "<group>"; };
+		852AC41716BF9C8A00382264 /* History+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "History+CRUD.m"; sourceTree = "<group>"; };
+		852AC41A16BF9CAF00382264 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		85399D3216BCA1E200D2A47C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		85399D3416BCB14000D2A47C /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
 		85399D3516BCB14000D2A47C /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
@@ -118,6 +142,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		852AC3A916BF59FA00382264 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				852AC3F716BF8A8300382264 /* Model.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		852AC3F616BF8A6700382264 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				852AC41A16BF9CAF00382264 /* Account.m */,
+				852AC41616BF9C8A00382264 /* History.m */,
+				852AC41716BF9C8A00382264 /* History+CRUD.m */,
+				852AC3F316BF8A5A00382264 /* FFCoreDataHelper.h */,
+				852AC3F416BF8A5A00382264 /* FFCoreDataHelper.m */,
+				852AC3FA16BF8C5400382264 /* Account.h */,
+				852AC3FD16BF8C6300382264 /* History.h */,
+				852AC40316BF8EC000382264 /* Account+CRUD.h */,
+				852AC40416BF8EC000382264 /* Account+CRUD.m */,
+				852AC40616BF8ED200382264 /* History+CRUD.h */,
+				852AC40716BF8ED200382264 /* History+CRUD.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		85948AD316B806AA00D208FB = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +212,11 @@
 		85948AE816B806AA00D208FB /* GPRSTest */ = {
 			isa = PBXGroup;
 			children = (
+				852AC41116BF926300382264 /* ELTableViewCell.h */,
+				852AC41216BF926400382264 /* ELTableViewCell.m */,
+				852AC41316BF926400382264 /* MyCell.xib */,
+				852AC3F616BF8A6700382264 /* Helpers */,
+				852AC3A916BF59FA00382264 /* Core Data */,
 				853BEA3D16BA3C5D003E4DB2 /* APIKey.h */,
 				85948AF116B806AA00D208FB /* MTAppDelegate.h */,
 				85948AF216B806AA00D208FB /* MTAppDelegate.m */,
@@ -262,6 +317,7 @@
 				853BEA4416BA3DC6003E4DB2 /* LoginView.xib in Resources */,
 				853BEA4E16BA4B3E003E4DB2 /* MapInfoView.xib in Resources */,
 				85597F0216BCDE4E00D710FF /* MTTimeViewController.xib in Resources */,
+				852AC41516BF926400382264 /* MyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +335,14 @@
 				85F0871616BA6F20003A20CA /* MyCLController.m in Sources */,
 				85399D3616BCB14000D2A47C /* MyAnnotation.m in Sources */,
 				85597F0116BCDE4E00D710FF /* MTTimeViewController.m in Sources */,
+				852AC3F516BF8A5A00382264 /* FFCoreDataHelper.m in Sources */,
+				852AC3F916BF8A8300382264 /* Model.xcdatamodeld in Sources */,
+				852AC40516BF8EC000382264 /* Account+CRUD.m in Sources */,
+				852AC40816BF8ED200382264 /* History+CRUD.m in Sources */,
+				852AC41416BF926400382264 /* ELTableViewCell.m in Sources */,
+				852AC41816BF9C8A00382264 /* History.m in Sources */,
+				852AC41916BF9C8A00382264 /* History+CRUD.m in Sources */,
+				852AC41B16BF9CAF00382264 /* Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +476,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		852AC3F716BF8A8300382264 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				852AC3F816BF8A8300382264 /* Model.xcdatamodel */,
+			);
+			currentVersion = 852AC3F816BF8A8300382264 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 85948AD516B806AA00D208FB /* Project object */;
 }

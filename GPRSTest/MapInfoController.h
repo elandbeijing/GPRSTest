@@ -22,22 +22,22 @@
     MyAnnotation *_pinAnnotation ;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *timeSection;
+@property (strong, nonatomic) IBOutlet UILabel *timeSection;
 
-@property (weak, nonatomic) IBOutlet UILabel *distance;
-@property (weak, nonatomic) IBOutlet UIButton *leftbtn;
-@property (weak, nonatomic) IBOutlet UIButton *rightbtn;
+@property (strong, nonatomic) IBOutlet UILabel *distance;
+@property (strong, nonatomic) IBOutlet UIButton *leftbtn;
+@property (strong, nonatomic) IBOutlet UIButton *rightbtn;
 
 - (IBAction)StartOrPause:(id)sender;
 - (IBAction)stopOrExit:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIView *ShowView;
+@property (strong, nonatomic) IBOutlet UIView *ShowView;
 
-@property (nonatomic, retain) MKMapView* mapView;
-@property (nonatomic, retain) NSMutableArray* points;
-@property (nonatomic, retain) MKPolyline* routeLine;
-@property (nonatomic, retain) MKPolylineView* routeLineView;
-@property (nonatomic, retain) CLLocationManager* locationManager;
+@property (nonatomic, strong) MKMapView* mapView;
+@property (nonatomic, strong) NSMutableArray* points;
+@property (nonatomic, strong) MKPolyline* routeLine;
+@property (nonatomic, strong) MKPolylineView* routeLineView;
+@property (nonatomic, strong) CLLocationManager* locationManager;
 
 -(void) configureRoutes;
 

@@ -11,10 +11,10 @@
 @interface LoginController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 
-@property (weak, nonatomic) IBOutlet UITableView *accountTableView;
+@property (strong, nonatomic) IBOutlet UITableView *accountTableView;
 
 - (IBAction)jumpMap:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *btnRunning;
+@property (strong, nonatomic) IBOutlet UIButton *btnRunning;
 
 @end
