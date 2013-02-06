@@ -7,8 +7,7 @@
 //
 
 #import "MapInfoController.h"
-#import <CoreLocation/CoreLocation.h>
-#import <MapKit/MapKit.h>
+#import "MyAnnotation.h"
 
 static double distanceSum;
 
@@ -58,33 +57,30 @@ static double distanceSum;
 
 - (void)viewDidLoad
 {
-    NSLog(@"%@",@"11");
+
     [super viewDidLoad];
-        NSLog(@"%@",@"22");
+
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"newbalance"]];
     [self.navigationController setNavigationBarHidden:YES];
-        NSLog(@"%@",@"33");
+
     // setup map view
     if(self.mapView==nil)
     {
         self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
         [self.ShowView addSubview:self.mapView];
     }
+
    // [self.mapView setMapType:MKMapTypeHybrid];
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
     self.mapView.userInteractionEnabled = YES;
     self.mapView.userTrackingMode = MKUserTrackingModeFollowWithHeading;
-    
-
 
     // configure location manager
     // [self configureLocationManager];
-    
-
-    
     checked=YES;
     [_timeSection setText:@"00:00:00:00"];
+
 
 }
 
@@ -141,6 +137,19 @@ static double distanceSum;
     
     // clear the memory allocated earlier for the points
 	free(pointArray);
+    
+    CLLocationCoordinate2D coordinate=CLLocationCoordinate2DMake(_currentLocation.coordinate.latitude, _currentLocation.coordinate.longitude);
+    MyAnnotation *pinAnnotation;
+    if(pinAnnotation!=nil)
+    {
+        [_mapView removeAnnotation:pinAnnotation];
+        
+    }
+    pinAnnotation= [[MyAnnotation alloc] initWithCoords:coordinate];
+    pinAnnotation.title = @"PIN-TITLE";
+    pinAnnotation.subtitle = @"PIN_SUBTITLE";
+    [_mapView addAnnotation:pinAnnotation];
+
     
     
 //     double width = northEastPoint.x - southWestPoint.x;
@@ -240,35 +249,40 @@ static double distanceSum;
 	return overlayView;
 }
 
-//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
-//    NSLog(@"-------viewForAnnotation-------");
-//
-//
-//    //此类可以显示针一样的图标
-//    MKPinAnnotationView *newAnnotation=[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"annotation1"];
-//    
-//    //newAnnotation.animatesDrop=YES;
-//    //newAnnotation.animatesDrop=NO;
-//    
-//    newAnnotation.pinColor=MKPinAnnotationColorPurple;
-//    //显示标志提示
-//   // newAnnotation.canShowCallout=YES;
-//    return newAnnotation;
-//}
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
+    NSLog(@"-------viewForAnnotation-------");
+    static NSString *placemarkIdentifier = @"my annotation identifier";
+    if ([annotation isKindOfClass:[MyAnnotation class]]) {
+        MKAnnotationView *annotationView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:placemarkIdentifier];
+        if (annotationView == nil) {
+            annotationView.canShowCallout=YES;
 
-//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
-//{
-////    CLLocationCoordinate2D coordinate=CLLocationCoordinate2DMake(_currentLocation.coordinate.latitude, _currentLocation.coordinate.longitude);
-////    if(_pinAnnotation!=nil)
-////    {
-////        [_mapView removeAnnotation:_pinAnnotation];
-////
-////    }
-////    _pinAnnotation= [[MyAnnotation alloc] initWithCoords:coordinate];
-////    _pinAnnotation.title = @"PIN-TITLE";
-////    _pinAnnotation.subtitle = @"PIN_SUBTITLE";
-////    [_mapView addAnnotation:_pinAnnotation];
-//}
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:placemarkIdentifier];
+            //annotationView.image = [UIImage imageNamed:@"blueshow.png"];
+        }
+        else
+            annotationView.annotation = annotation;
+        return annotationView;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+//    CLLocationCoordinate2D coordinate=CLLocationCoordinate2DMake(_currentLocation.coordinate.latitude, _currentLocation.coordinate.longitude);
+//    if(_pinAnnotation!=nil)
+//    {
+//        [_mapView removeAnnotation:_pinAnnotation];
+//
+//    }
+//    _pinAnnotation= [[MyAnnotation alloc] initWithCoords:coordinate];
+//    _pinAnnotation.title = @"PIN-TITLE";
+//    _pinAnnotation.subtitle = @"PIN_SUBTITLE";
+//    [_mapView addAnnotation:_pinAnnotation];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -336,7 +350,6 @@ static double distanceSum;
         time_lap = 0;
       //  [_tableview reloadData];
     }
-
     
         [self.navigationController popViewControllerAnimated:YES];
    // [self viewDidUnload];

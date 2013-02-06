@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8507FD0F16C1F72D0058553A /* blueshow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8507FD0E16C1F72D0058553A /* blueshow.jpg */; };
 		851AE98C16B89E1A003D2E0C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */; };
 		852AC3F516BF8A5A00382264 /* FFCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AC3F416BF8A5A00382264 /* FFCoreDataHelper.m */; };
 		852AC3F916BF8A8300382264 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 852AC3F716BF8A8300382264 /* Model.xcdatamodeld */; };
@@ -54,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8507FD0E16C1F72D0058553A /* blueshow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueshow.jpg; sourceTree = "<group>"; };
 		851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		852AC3F316BF8A5A00382264 /* FFCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCoreDataHelper.h; sourceTree = "<group>"; };
 		852AC3F416BF8A5A00382264 /* FFCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCoreDataHelper.m; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		85948AE916B806AA00D208FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8507FD0E16C1F72D0058553A /* blueshow.jpg */,
 				853BEA3716BA3696003E4DB2 /* newbalance.png */,
 				853BEA3B16BA3B90003E4DB2 /* newbalance@2x.png */,
 				851AE98B16B89E1A003D2E0C /* GoogleMaps.bundle */,
@@ -331,6 +334,7 @@
 				853BEA4E16BA4B3E003E4DB2 /* MapInfoView.xib in Resources */,
 				85597F0216BCDE4E00D710FF /* MTTimeViewController.xib in Resources */,
 				852AC41516BF926400382264 /* MyCell.xib in Resources */,
+				8507FD0F16C1F72D0058553A /* blueshow.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
