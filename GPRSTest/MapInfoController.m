@@ -7,8 +7,10 @@
 //
 
 #import "MapInfoController.h"
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-static float distanceSum;
+static double distanceSum;
 
 @interface MapInfoController ()
 {
@@ -35,12 +37,13 @@ static float distanceSum;
     [self setTimeSection:nil];
     [self setDistance:nil];
     [self setLeftbtn:nil];
-    [self setRightbtn:nil];
     [self setMapView:nil];
     [self setPoints:nil];
     [self setRouteLine:nil];
     [self setRouteLineView:nil];
     [self setLocationManager:nil];
+    [self setLblSpeed:nil];
+    [self setRightbtn:nil];
     [super viewDidUnload];
 }
 
@@ -55,28 +58,26 @@ static float distanceSum;
 
 - (void)viewDidLoad
 {
+    NSLog(@"%@",@"11");
     [super viewDidLoad];
-    
+        NSLog(@"%@",@"22");
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"newbalance"]];
     [self.navigationController setNavigationBarHidden:YES];
-    
+        NSLog(@"%@",@"33");
     // setup map view
-    if(!self.mapView)
+    if(self.mapView==nil)
     {
         self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+        [self.ShowView addSubview:self.mapView];
     }
    // [self.mapView setMapType:MKMapTypeHybrid];
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
     self.mapView.userInteractionEnabled = YES;
     self.mapView.userTrackingMode = MKUserTrackingModeFollowWithHeading;
-
-
-        [self.ShowView addSubview:self.mapView];
     
 
-    
-    
+
     // configure location manager
     // [self configureLocationManager];
     
@@ -127,7 +128,7 @@ static float distanceSum;
 		pointArray[idx] = point;
 	}
 	
-    if (self.routeLine) {
+    if (self.routeLine!=nil) {
         [self.mapView removeOverlay:self.routeLine];
     }
     
@@ -159,46 +160,58 @@ static float distanceSum;
     NSLog(@"%@ ----- %@", self, NSStringFromSelector(_cmd));
     
     
-//    CLLocation *location = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude
-//                                                      longitude:userLocation.coordinate.longitude];
-//   // _lblLat.text=[NSString stringWithFormat:@"%f",userLocation.coordinate.latitude];
-//   // _lblLon.text=[NSString stringWithFormat:@"%f",userLocation.coordinate.longitude];
-//    
-//    NSLog(@"%f,%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
-//    
-//    // check the zero point
-//    if  (userLocation.coordinate.latitude == 0.0f ||
-//         userLocation.coordinate.longitude == 0.0f)
-//        return;
-//    
-//    // check the move distance
-//    if (_points.count > 0) {
-//        CLLocationDistance distance = [location distanceFromLocation:_currentLocation];
-//        
-//        if (distance < 2)
-//            return;
-//        else
-//        {
-//            distanceSum+=distance;
-//            _distance.text=[NSString stringWithFormat:@"%d m",(int)distanceSum];
-//        }
-//    }
-//    
-//    if (nil == _points) {
-//        _points = [[NSMutableArray alloc] init];
-//    }
-//    
-//    [_points addObject:location];
-//    _currentLocation = location;
-//    
-//  
-//    
-//    NSLog(@"points: %@", _points);
-//    
-//   // [self configureRoutes];
-//    
-//    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude, userLocation.coordinate.longitude);
-//    [self.mapView setCenterCoordinate:coordinate animated:YES];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude
+                                                      longitude:userLocation.coordinate.longitude];
+   // _lblLat.text=[NSString stringWithFormat:@"%f",userLocation.coordinate.latitude];
+   // _lblLon.text=[NSString stringWithFormat:@"%f",userLocation.coordinate.longitude];
+    if(location==nil)return;
+    NSLog(@"%f,%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+    
+    // check the zero point
+    if  (userLocation.coordinate.latitude == 0.0f ||
+         userLocation.coordinate.longitude == 0.0f)
+        return;
+    
+    // check the move distance
+    if (_points.count > 0) {
+        CLLocationDistance distance = [location distanceFromLocation:_currentLocation];
+
+        if (distance < 2)
+            return;
+        else
+        {
+            if(checked)
+            {
+                distanceSum+=distance;
+                _distance.text=[NSString stringWithFormat:@"%d m",(int)distanceSum];
+                if(time==0)
+                {
+                    _lblSpeed.text=@"0 m/s";
+                }
+                else
+                {
+                    _lblSpeed.text=[NSString stringWithFormat:@"%.2f m/s",distanceSum/time];
+                }
+
+            }
+        }
+    }
+    
+    if (nil == _points) {
+        _points = [[NSMutableArray alloc] init];
+    }
+    
+    [_points addObject:location];
+    _currentLocation = location;
+
+  
+    
+    NSLog(@"points: %@", _points);
+    
+    [self configureRoutes];
+    
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(userLocation.coordinate.latitude, userLocation.coordinate.longitude);
+    [self.mapView setCenterCoordinate:coordinate animated:YES];
 }
 
 //over lay
@@ -339,6 +352,7 @@ static float distanceSum;
     timestr=[timestr stringByReplacingOccurrencesOfString:@"." withString:@":"];
     timestr_lap=[timestr_lap stringByReplacingOccurrencesOfString:@"." withString:@":"];
     [_timeSection setText:timestr];
+    _lblSpeed.text=[NSString stringWithFormat:@"%.2f m/s",distanceSum/time];
     return time;
 }
 

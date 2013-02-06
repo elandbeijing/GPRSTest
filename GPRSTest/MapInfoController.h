@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
-#import "MyAnnotation.h"
 
 
 @interface MapInfoController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>
@@ -19,19 +18,23 @@
     
     // current location
     CLLocation* _currentLocation;
-    MyAnnotation *_pinAnnotation ;
 }
 
-@property (strong, nonatomic) IBOutlet UILabel *timeSection;
+@property (weak, nonatomic) IBOutlet UILabel *timeSection;
 
-@property (strong, nonatomic) IBOutlet UILabel *distance;
-@property (strong, nonatomic) IBOutlet UIButton *leftbtn;
-@property (strong, nonatomic) IBOutlet UIButton *rightbtn;
+@property (weak, nonatomic) IBOutlet UILabel *distance;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblSpeed;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *leftbtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *rightbtn;
 
 - (IBAction)StartOrPause:(id)sender;
 - (IBAction)stopOrExit:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UIView *ShowView;
+@property (weak, nonatomic) IBOutlet UIView *ShowView;
 
 @property (nonatomic, strong) MKMapView* mapView;
 @property (nonatomic, strong) NSMutableArray* points;

@@ -9,10 +9,11 @@
 #import "LoginController.h"
 #import "MapInfoController.h"
 #import "ELTableViewCell.h"
+#import "UserInfo.h"
 
 @interface LoginController ()
 {
-    NSArray *accountDataSource;
+    NSMutableArray *accountDataSource;
 }
 
 @end
@@ -35,7 +36,23 @@
     self.navigationItem.title=@"Account";
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"newbalance"]];
     _accountTableView.delegate=self;
+    _accountTableView.dataSource=self;
     
+    accountDataSource=[[NSMutableArray alloc] init];
+    UserInfo *userInfo=[[UserInfo alloc] init];
+    userInfo.title=@"height";
+    userInfo.subTitle=@"1.75m";
+    
+    UserInfo *userInfo1=[[UserInfo alloc] init];
+    userInfo1.title=@"weight";
+    userInfo1.subTitle=@"64kg";
+    
+    UserInfo *userInfo2=[[UserInfo alloc] init];
+    userInfo2.title=@"sex";
+    userInfo2.subTitle=@"male";
+    [accountDataSource addObject:userInfo];
+    [accountDataSource addObject:userInfo1];
+    [accountDataSource addObject:userInfo2];
     
     _btnRunning.backgroundColor=[UIColor redColor];
     //accountDataSource=[[NSArray alloc] initWithObjects:@"",@"",@"", nil];
@@ -63,17 +80,6 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // NSString *identifier=@"mainTableView";
-    //        UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
-    //    if(cell==nil)
-    //    {
-    //        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    //    }
-    //    NSString *title= [dataSourceTableView objectAtIndex:[indexPath row] ];
-    //    cell.textLabel.text=title;
-    //    cell.detailTextLabel.text=title;
-    //    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
-    //    return cell;
     static NSString *identifier = @"CellTableIdentifier";
     static BOOL nibsRegistered = NO;
     if (!nibsRegistered)
@@ -85,10 +91,10 @@
     
     ELTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
     
-    NSString *title= [accountDataSource objectAtIndex:[indexPath row] ];
-    cell.name=title;
-    cell.age=title;
-    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
+    UserInfo *userInfo= [accountDataSource objectAtIndex:[indexPath row] ];
+    cell.name=userInfo.title;
+    cell.age=userInfo.subTitle;
+    cell.accessoryType=UITableViewCellAccessoryNone;
     return cell;
 }
 

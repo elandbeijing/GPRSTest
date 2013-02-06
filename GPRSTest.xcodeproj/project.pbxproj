@@ -27,6 +27,7 @@
 		853BEA4E16BA4B3E003E4DB2 /* MapInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853BEA4C16BA4B3E003E4DB2 /* MapInfoView.xib */; };
 		85597F0116BCDE4E00D710FF /* MTTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85597EFF16BCDE4E00D710FF /* MTTimeViewController.m */; };
 		85597F0216BCDE4E00D710FF /* MTTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85597F0016BCDE4E00D710FF /* MTTimeViewController.xib */; };
+		8562B17616C137A400B44251 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8562B17516C137A400B44251 /* UserInfo.m */; };
 		85948AE316B806AA00D208FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE216B806AA00D208FB /* UIKit.framework */; };
 		85948AE516B806AA00D208FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE416B806AA00D208FB /* Foundation.framework */; };
 		85948AE716B806AA00D208FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85948AE616B806AA00D208FB /* CoreGraphics.framework */; };
@@ -84,6 +85,8 @@
 		85597EFE16BCDE4E00D710FF /* MTTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTimeViewController.h; sourceTree = "<group>"; };
 		85597EFF16BCDE4E00D710FF /* MTTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTimeViewController.m; sourceTree = "<group>"; };
 		85597F0016BCDE4E00D710FF /* MTTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTimeViewController.xib; sourceTree = "<group>"; };
+		8562B17416C137A400B44251 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		8562B17516C137A400B44251 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		85948ADE16B806AA00D208FB /* GPRSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPRSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85948AE216B806AA00D208FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85948AE416B806AA00D208FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -168,6 +171,15 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		8562B17216C1375D00B44251 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8562B17416C137A400B44251 /* UserInfo.h */,
+				8562B17516C137A400B44251 /* UserInfo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		85948AD316B806AA00D208FB = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +224,7 @@
 		85948AE816B806AA00D208FB /* GPRSTest */ = {
 			isa = PBXGroup;
 			children = (
+				8562B17216C1375D00B44251 /* Models */,
 				852AC41116BF926300382264 /* ELTableViewCell.h */,
 				852AC41216BF926400382264 /* ELTableViewCell.m */,
 				852AC41316BF926400382264 /* MyCell.xib */,
@@ -343,6 +356,7 @@
 				852AC41816BF9C8A00382264 /* History.m in Sources */,
 				852AC41916BF9C8A00382264 /* History+CRUD.m in Sources */,
 				852AC41B16BF9CAF00382264 /* Account.m in Sources */,
+				8562B17616C137A400B44251 /* UserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
